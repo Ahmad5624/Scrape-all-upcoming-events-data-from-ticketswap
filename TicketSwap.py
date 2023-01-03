@@ -1,24 +1,18 @@
+"""Important libraries to install """
 import csv
-import re
 import time
-import concurrent
-import pandas as pd
-import requests
-import urllib.request
-from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import json
 
+# Add the locations here that you want to scrape events from desired countries
 Total_locations = ['París', 'Birmingham', 'Barcelona', 'Valencia', 'Sevilla', 'Zaragoza', 'Málaga', 'Marsella',
                    'Lyon', 'Berlín', 'Hamburgo', 'Múnich', 'London', 'Manchester', 'Madrid']
 HEADER_FILE = ['Event name', 'Ticket type', 'Event date', 'Nº tickets available', 'Nº tickets sold',
