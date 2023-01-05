@@ -12,9 +12,6 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-# Add the locations here that you want to scrape events from desired countries
-Total_locations = ['París', 'Barcelona', 'Birmingham', 'Valencia', 'Sevilla', 'Zaragoza', 'Málaga', 'Marsella',
-                   'Lyon', 'Berlín', 'Hamburgo', 'Múnich', 'London', 'Manchester', 'Madrid']
 HEADER_FILE = ['Event name', 'Ticket type', 'Event date', 'Nº tickets available', 'Nº tickets sold',
                'Nº tickets wanted',
                'Lower selling ticket price available ', 'Lower selling ticket price recently sold 1',
